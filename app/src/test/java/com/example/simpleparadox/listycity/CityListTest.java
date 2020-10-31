@@ -31,7 +31,7 @@ class CityListTest {
     
     @Test
     void addException(){
-        CityList cityList = mockList();
+        CityList cityList = mockCityList();
         final City city = new City("Toronto","Ontario");
         cityList.add(city);
 
@@ -42,7 +42,7 @@ class CityListTest {
 
     @Test
     void hasCityTest(){
-        CityList cityList = mockList();
+        CityList cityList = mockCityList();
         City city = new City("Vancouver","British Columbia");
         assertFalse(cityList.hasCity(city));
         cityList.add(city);
@@ -51,7 +51,7 @@ class CityListTest {
     
     @Test
     void getCityTest(){
-        CityList cityList = mockList();
+        CityList cityList = mockCityList();
         assertEquals(0,mock().compareTo(cityList.getCities().get(0)));
         City city=new City("Charlottetown","Prince Edward Island");
         cityList.add(city);
