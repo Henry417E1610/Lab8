@@ -52,11 +52,11 @@ class CityListTest {
     @Test
     void getCityTest(){
         CityList cityList = mockCityList();
-        assertEquals(0,mock().compareTo(cityList.getCities().get(0)));
+        assertEquals(0,mockCity().compareTo(cityList.getCities().get(0)));
         City city=new City("Charlottetown","Prince Edward Island");
         cityList.add(city);
 
         assertEquals(0,city.compareTo(cityList.getCities().get(0)));
-        assertEquals(0,mock().compareTo(cityList.getCities().get(1)));
+        assertEquals(0,mockCity().compareTo(cityList.getCities().get(1)));
     }
 }
