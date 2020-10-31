@@ -44,8 +44,8 @@ class CityListTest {
     void hasCityTest(){
         CityList cityList = mockCityList();
         City city = new City("Vancouver","British Columbia");
-        //assertFalse(cityList.hasCity(city));
-        //cityList.add(city);
+        assertFalse(cityList.hasCity(city));
+        cityList.add(city);
         assertTrue(cityList.hasCity(city));
     }
     
